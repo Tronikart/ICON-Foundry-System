@@ -1,22 +1,22 @@
 {
-  "BOILERPLATE.AbilityStr": "Strength",
-  "BOILERPLATE.AbilityCon": "Constitution",
-  "BOILERPLATE.AbilityDex": "Dexterity",
-  "BOILERPLATE.AbilityInt": "Intelligence",
-  "BOILERPLATE.AbilityWis": "Wisdom",
-  "BOILERPLATE.AbilityCha": "Charisma",
+  "ICONRPG.AbilityStr": "Strength",
+  "ICONRPG.AbilityCon": "Constitution",
+  "ICONRPG.AbilityDex": "Dexterity",
+  "ICONRPG.AbilityInt": "Intelligence",
+  "ICONRPG.AbilityWis": "Wisdom",
+  "ICONRPG.AbilityCha": "Charisma",
 
-  "BOILERPLATE.AbilityStrAbbr": "str",
-  "BOILERPLATE.AbilityConAbbr": "con",
-  "BOILERPLATE.AbilityDexAbbr": "dex",
-  "BOILERPLATE.AbilityIntAbbr": "int",
-  "BOILERPLATE.AbilityWisAbbr": "wis",
-  "BOILERPLATE.AbilityChaAbbr": "cha",
+  "ICONRPG.AbilityStrAbbr": "str",
+  "ICONRPG.AbilityConAbbr": "con",
+  "ICONRPG.AbilityDexAbbr": "dex",
+  "ICONRPG.AbilityIntAbbr": "int",
+  "ICONRPG.AbilityWisAbbr": "wis",
+  "ICONRPG.AbilityChaAbbr": "cha",
 
-  "BOILERPLATE.EffectCreate": "Create Effect",
-  "BOILERPLATE.EffectToggle": "Toggle Effect",
-  "BOILERPLATE.EffectEdit": "Edit Effect",
-  "BOILERPLATE.EffectDelete": "Delete Effect",
+  "ICONRPG.EffectCreate": "Create Effect",
+  "ICONRPG.EffectToggle": "Toggle Effect",
+  "ICONRPG.EffectEdit": "Edit Effect",
+  "ICONRPG.EffectDelete": "Delete Effect",
 
-  "BOILERPLATE.Add": "Add"
+  "ICONRPG.Add": "Add"
 }

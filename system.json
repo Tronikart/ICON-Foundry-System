@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate",
-  "title": "Boilerplate",
-  "description": "The Boilerplate system for FoundryVTT!",
+  "name": "iconrpg",
+  "title": "IconRPG",
+  "description": "The IconRPG system for FoundryVTT!",
   "version": "1.1.1",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
   "author": "Asacolips",
-  "esmodules": ["module/boilerplate.mjs"],
-  "styles": ["css/boilerplate.css"],
+  "esmodules": ["module/iconrpg.mjs"],
+  "styles": ["css/iconrpg.css"],
   "scripts": [],
   "packs": [],
   "languages": [

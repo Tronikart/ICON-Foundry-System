@@ -5,7 +5,11 @@
   "version": "1.1.1",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
-  "author": "Asacolips",
+  "author": [
+    "Asacolips",
+    "Ruby",
+    "Gona"
+  ],
   "esmodules": ["module/iconrpg.mjs"],
   "styles": ["css/iconrpg.css"],
   "scripts": [],

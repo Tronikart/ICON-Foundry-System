@@ -21,8 +21,8 @@
       "path": "lang/en.json"
     }
   ],
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "gridDistance": 1,
+  "gridUnits": "spaces",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "",

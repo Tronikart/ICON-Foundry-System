@@ -1,73 +1,202 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": [
+      "pc",
+      "npc",
+      "summon",
+      "object",
+      "camp"
+    ],
     "templates": {
-      "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
-        },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
-        },
-        "biography": ""
+      "action_tracking": {
+        "action_tracker": {
+          "actions": 2,
+          "move": 0
+        }
       }
     },
-    "character": {
-      "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
-        }
+    "pc": {
+      "templates": ["action_tracking"],
+      "name": "",
+      "kintype": "",
+      "culture": "",
+      "text_description": "",
+      "notes": "",
+      "xp": {
+        "min": 0,
+        "max": 15,
+        "value": 0
       },
-      "abilities": {
-        "str": {
-          "value": 10
-        },
-        "dex": {
-          "value": 10
-        },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
-        }
-      }
+      "elixirs": {
+        "min": 0,
+        "max": 2,
+        "value": 2
+      },
+      "dust": 0,
+      "hp": {
+        "min": 0,
+        "value": 40,
+        "max": 40
+      },
+      "vigor": {
+        "min": 0,
+        "value": 0
+      },
+      "action_ratings": {
+        "sneak"    : 0,
+        "excel"    : 0,
+        "survey"   : 0,
+        "charm"    : 0,
+        "command"  : 0,
+        "tinker"   : 0,
+        "study"    : 0,
+        "traverse" : 0,
+        "smash"    : 0,
+        "endure"   : 0
+      },
+      "combat_ratings": {
+        "crush"    : 0,
+        "snipe"    : 0,
+        "skirmish" : 0
+      },
+      "special_ratings": {
+        "cook" : 0,
+        "fish" : 0
+      },
+      "bond": null,
+      "bond_powers": [],
+      "stress": {
+        "min": 0,
+        "max": 0,
+        "value": 0
+      },
+      "harm": {
+        "min": 0,
+        "max": 0,
+        "value": 0
+      },
+      "job_class": {
+        "job": null,
+        "class": null
+      },
+      "learned_abilities": [],
+      "equipped_abilities": [],
+      "gambits": []
     },
     "npc": {
-      "templates": ["base"],
-      "cr": 0
+      "templates": ["action_tracking"],
+      "job_class": {
+        "job": null,
+        "class": null
+      }
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
-    "templates": {
-      "base": {
-        "description": ""
-      }
-    },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
-    },
-    "feature": {
-      "templates": ["base"]
-    },
-    "spell": {
-      "templates": ["base"],
-      "spellLevel": 1
+    "types": [
+      "relic",
+      "fixture",
+      "trophy",
+      "trait",
+      "job",
+      "class",
+      "ability",
+      "gambit",
+      "tag",
+      "npc_job",
+      "npc_class",
+      "npc_feature",
+      "action_rating",
+      "burden",
+      "bond",
+      "bond_power"
+    ]
+  },
+  "templates": {
+    "item_description": {
+      "name": "",
+      "description": ""
     }
+  },
+  "relic": {
+    "templates": ["item_description"],
+    "levels": [],
+    "aspect_quest": ""
+  },
+  "fixture": {
+    "templates": ["item_description"],
+    "purchase_cost": 0,
+    "upgrade_cost": 0,
+    "upgrades": []
+  },
+  "trophy": {
+    "templates": ["item_description"]
+  },
+  "trait": {
+    "templates": ["item_description"],
+    "is_action": false,
+    "action_cost": 1,
+    "source": ""
+  },
+  "job": {
+    "health": 10,
+    "hp": {
+      "min": 0,
+      "value": 40,
+      "max": 40,
+      "vigor": 0,
+      "vigor_max": 0
+    },
+    "defense": 0,
+    "armor": 0,
+    "speed": 0,
+    "dash": 0,
+    "fray": 0,
+    "damage_die": "",
+    "basic_atk_range": 0
+  },
+  "class": {
+    "job": null,
+    "traits": []
+  },
+  "ability": {
+    "templates": ["item_description"],
+    "job": null,
+    "is_gambit": false,
+    "effects": [],
+    "talents": [],
+    "range": [],
+    "mastery": {
+        "description": "",
+        "is_unlocked": false
+      }
+  },
+  "gambit": { // classes, but only for multiclassing
+    "job": null,
+    "traits": []
+  },
+  "tag": {
+    "name": "New Tag",
+    "templates": ["item_description"]
+  },
+  "npc_job": {
+    "templates": ["item_description"],
+    "health": 10,
+    "max_hp": 40,
+    "defense": 0,
+    "armor": 0,
+    "speed": 0,
+    "dash": 0,
+    "fray": 0,
+    "damage_die": "",
+    "faction": "",
+    "faction_traits": []
+  },
+  "action_rating": {
+    "templates": ["item_description"],
+    "level": 0
+  },
+  "bond": {
+    "templates": ["item_description"],
+    "bond_powers": []
   }
 }

@@ -160,7 +160,6 @@
   },
   "ability": {
     "templates": ["item_description"],
-    "job": null,
     "is_gambit": false,
     "effects": [],
     "talents": [],
@@ -170,7 +169,7 @@
         "is_unlocked": false
       }
   },
-  "gambit": { // classes, but only for multiclassing
+  "gambit": {
     "job": null,
     "traits": []
   },

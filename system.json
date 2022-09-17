@@ -1,14 +1,18 @@
 {
-  "name": "iconrpg",
+  "id": "iconrpg",
   "title": "IconRPG",
   "description": "The IconRPG system for FoundryVTT!",
   "version": "1.1.1",
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "9",
-  "author": [
-    "Asacolips",
-    "Ruby",
-    "Gona"
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "authors": [
+    {"name": "Asacolips", "discord": ""},
+    {"name": "Ruby", "discord": "Cube#4644"},
+    {"name": "Gona", "discord": "Gona#9259"},
+    {"name": "wickedRobot","discord": "wickedRobot#2069"}
   ],
   "esmodules": ["module/iconrpg.mjs"],
   "styles": ["css/iconrpg.css"],
@@ -21,8 +25,8 @@
       "path": "lang/en.json"
     }
   ],
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "gridDistance": 1,
+  "gridUnits": "sq",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "",
